@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styles from "./SplitForm.module.css";
+import Input from "../input/Input";
+import Label from "../label/Label";
 
 function SplitForm({ splitFriend, updatedSplitFriend }) {
   const [billAmount, setBillAmount] = useState(0);
@@ -31,11 +33,11 @@ function SplitForm({ splitFriend, updatedSplitFriend }) {
             Split Bill With {splitFriend?.name}
           </h1>
           <form className={styles.splitForm} onSubmit={onSubmitSplitHandler}>
-            <label htmlFor="amount" className={styles.label}>
+            <Label htmlFor="amount" className={styles.label}>
               Total bill Amount
-            </label>
+            </Label>
             <br />
-            <input
+            <Input
               type="number"
               id="amount"
               className={styles.input}
@@ -43,13 +45,17 @@ function SplitForm({ splitFriend, updatedSplitFriend }) {
               onChange={(e) => setBillAmount(e.target.value)}
               value={billAmount}
             />
+
+            {/* <input
+              
+            /> */}
             <br />
 
-            <label htmlFor="yourContri" className={styles.label}>
+            <Label htmlFor="yourContri" className={styles.label}>
               Your contribution
-            </label>
+            </Label>
             <br />
-            <input
+            <Input
               type="number"
               id="yourContri"
               className={styles.input}
@@ -61,14 +67,15 @@ function SplitForm({ splitFriend, updatedSplitFriend }) {
                 );
               }}
             />
+
             <br />
 
-            <label htmlFor="friendContri" className={styles.label}>
+            <Label htmlFor="friendContri" className={styles.label}>
               Your friend's contribution
-            </label>
+            </Label>
             <br />
-            <input
-              disabled
+            <Input
+              disabled={true}
               type="number"
               id="friendContri"
               className={styles.input}
@@ -77,9 +84,9 @@ function SplitForm({ splitFriend, updatedSplitFriend }) {
             />
             <br />
 
-            <label htmlFor="select" className={styles.label}>
+            <Label htmlFor="select" className={styles.label}>
               Who is going to pay
-            </label>
+            </Label>
             <br />
             <select
               id="select"

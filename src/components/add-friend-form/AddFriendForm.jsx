@@ -1,6 +1,8 @@
 import { useState } from "react";
 import FriendsList from "../friends-list/FriendsList";
 import styles from "./AddFriendForm.module.css";
+import Label from "../label/Label";
+import Input from "../input/Input";
 
 function AddFriendsForm({ friendsData, newFriendHandler }) {
   const [addFriend, setAddFriend] = useState(false);
@@ -40,11 +42,12 @@ function AddFriendsForm({ friendsData, newFriendHandler }) {
     <>
       {addFriend ? (
         <form className={styles.newFriendForm} onSubmit={friendSubmitHandler}>
-          <label htmlFor="name" className={styles.label}>
+          <Label htmlFor="name" className={styles.label}>
             Name
-          </label>
+          </Label>
           <br />
-          <input
+
+          <Input
             type="text"
             id="name"
             placeholder="Name"
@@ -53,12 +56,12 @@ function AddFriendsForm({ friendsData, newFriendHandler }) {
             onChange={(e) => setName(e.target.value)}
           />
           <br />
-          <label htmlFor="icon" className={styles.label}>
+          <Label htmlFor="icon" className={styles.label}>
             Icon
-          </label>
+          </Label>
           <br />
-          <input
-            disabled
+          <Input
+            disabled={true}
             type="text"
             id="icon"
             value={icon}

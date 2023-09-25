@@ -14,7 +14,7 @@ function List({ friend, getSplitFriend }) {
           {friend.balance === 0
             ? ""
             : `${friend.balance < 0 ? `${friend.name}` : `you`} ${
-                friend.balance < 0 ? `owes` : `owe`
+                friend.balance < 0 ? `owes you` : `owe`
               } ${Math.abs(friend.balance)}`}
         </p>
       </div>

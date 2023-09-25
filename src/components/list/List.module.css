@@ -1,0 +1,30 @@
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  background-color: #fff59a;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.desc {
+  font-size: 1rem;
+}
+
+.img {
+  border-radius: 50%;
+}
+
+.btn {
+  padding: 0.5rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  background-color: #db942b;
+}

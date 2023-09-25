@@ -1,0 +1,10 @@
+.listContainer {
+  width: 500px;
+}
+
+.list {
+  background-color: #db942b;
+  list-style-type: none;
+  border-radius: 1rem;
+  padding: 1rem;
+}

@@ -1,0 +1,54 @@
+.newFriendForm {
+  background-color: #db942b;
+  list-style-type: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  color: #000;
+}
+
+.newFriendForm input:not(:nth-of-type(2)) {
+  margin-bottom: 1.4rem;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.btn,
+.addFriendBtn,
+.cancelFriendBtn {
+  padding: 0.5rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  background-color: #db942b;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.cancelFriendBtn {
+  margin-right: 1rem;
+}
+
+.formBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.formBtnContainer .addFriendBtn,
+.cancelFriendBtn {
+  background-color: #eec992;
+}
+
+.btn {
+  float: right;
+}

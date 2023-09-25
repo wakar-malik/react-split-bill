@@ -1,0 +1,42 @@
+.splitBillContainer {
+  width: 500px;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #db942b;
+}
+
+.splitForm {
+  margin-top: 1rem;
+}
+
+.input {
+  width: 100%;
+}
+
+.splitForm input:not(:nth-of-type(4)) {
+  margin-bottom: 1.4rem;
+}
+
+.input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  color: #000;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.btn {
+  padding: 0.5rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  background-color: #eec992;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  float: right;
+}

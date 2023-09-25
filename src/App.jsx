@@ -8,7 +8,7 @@ const friendsData = [
     id: "1",
     name: "Steven",
     imgUrl: "https://i.pravatar.cc/50?u=a042581f4e29027604d",
-    balance: -10,
+    balance: 0,
   },
   {
     id: "2",
@@ -20,13 +20,13 @@ const friendsData = [
     id: "3",
     name: "Peter",
     imgUrl: "https://i.pravatar.cc/50?u=a042581f4e20926704d",
-    balance: 20,
+    balance: 0,
   },
   {
     id: "4",
     name: "David",
     imgUrl: "https://i.pravatar.cc/50?u=a042581f4e29026740d",
-    balance: 100,
+    balance: 0,
   },
 ];
 
@@ -54,17 +54,22 @@ function App() {
   };
 
   return (
-    <div className={styles.container}>
-      <FriendsList
-        friends={friends}
-        newFriendHandler={newFriendHandler}
-        getSplitFriend={getSplitFriend}
-      />
-      <SplitForm
-        splitFriend={splitFriend}
-        updatedSplitFriend={updatedSplitFriend}
-      />
-    </div>
+    <>
+      <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>
+        Start Splitting Bill
+      </h1>
+      <div className={styles.container}>
+        <FriendsList
+          friends={friends}
+          newFriendHandler={newFriendHandler}
+          getSplitFriend={getSplitFriend}
+        />
+        <SplitForm
+          splitFriend={splitFriend}
+          updatedSplitFriend={updatedSplitFriend}
+        />
+      </div>
+    </>
   );
 }
 

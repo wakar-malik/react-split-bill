@@ -56,7 +56,7 @@ function App() {
   return (
     <>
       <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>
-        Start Splitting Billllllllllllllllllllll
+        Start Splitting Bill
       </h1>
       <div className={styles.container}>
         <FriendsList

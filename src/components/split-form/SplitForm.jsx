@@ -46,9 +46,6 @@ function SplitForm({ splitFriend, updatedSplitFriend }) {
               value={billAmount}
             />
 
-            {/* <input
-              
-            /> */}
             <br />
 
             <Label htmlFor="yourContri" className={styles.label}>

@@ -65,7 +65,7 @@ function App() {
           getSplitFriend={getSplitFriend}
         />
         <SplitForm
-          key={splitFriend.id}
+          key={splitFriend?.id}
           splitFriend={splitFriend}
           updatedSplitFriend={updatedSplitFriend}
         />
